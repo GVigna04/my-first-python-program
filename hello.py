@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 print("🧮 Calculator")
+=======
+print("caluculator")
+while True:
+    try:
+>>>>>>> 82f76d4890747821785fb1ce2b6e0e39524f1d54
 
 while True:
     try:
@@ -28,11 +34,24 @@ while True:
             else:
                 print("Result:", num1 / num2)
 
+<<<<<<< HEAD
         else:
             print("❌ Invalid operation")
 
     except ValueError:
         print("❌ Error: Please enter valid numbers")
+=======
+else:
+    print("Invalid operation")
+
+except ValueError:
+print("❌ Error: Please enter valid numbers")
+
+    again = input("\nDo you want to calculate again? (yes/no): ").lower()
+    if again != "yes":
+        print("👋 Goodbye!")
+        break
+>>>>>>> 82f76d4890747821785fb1ce2b6e0e39524f1d54
 
     again = input("\nDo you want to calculate again? (yes/no): ").lower()
     if again != "yes":

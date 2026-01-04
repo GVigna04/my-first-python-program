@@ -1,4 +1,6 @@
 print("caluculator")
+while True:
+    try:
 
 num1=float(input("enter first number"))
 num2=float(input("enter second number"))
@@ -33,6 +35,11 @@ elif operation == "/":
 else:
     print("Invalid operation")
 
-print("thank you for using calculator")
+except ValueError:
+print("❌ Error: Please enter valid numbers")
 
+    again = input("\nDo you want to calculate again? (yes/no): ").lower()
+    if again != "yes":
+        print("👋 Goodbye!")
+        break
 
